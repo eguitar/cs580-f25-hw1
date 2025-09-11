@@ -21,6 +21,7 @@ public class VendorInvoice implements Payable {
     @Override
     public double calculatePayment() { return amountDue; }
 
+    @Override
     public void print() {
         System.out.printf("Name: %s     Invoice Number: %d     Payment Amount: %.2f%n",
                           getPayeeName(), invoiceNum, calculatePayment());

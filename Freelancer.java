@@ -34,6 +34,7 @@ public class Freelancer implements Payable {
         else { return (40 * hourRate) + (1.5 * hourRate * (hours - 40)); }
     }
 
+    @Override
     public void print() {
         System.out.printf("Name: %s     Payment Amount: %.2f%n",
                 getPayeeName(), calculatePayment());
