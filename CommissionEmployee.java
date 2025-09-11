@@ -1,16 +1,18 @@
 public class CommissionEmployee extends Employee {
-    private double comRate;
-    private double comSale;
+    private int comRate;
+    private int comSale;
 
-    public CommissionEmployee(String firstName, String lastName, int socialNum, double comRate, double comSale) {
+    public CommissionEmployee(String firstName, String lastName, int socialNum, int comRate, int comSale) {
         super(firstName, lastName, socialNum);
         this.comRate = comRate;
         this.comSale = comSale;
     }
 
-    public double getComRate() { return comRate; }
-    public void setComRate(double comRate) { this.comRate = comRate; }
+    public int getComRate() { return comRate; }
+    public void setComRate(int comRate) { this.comRate = comRate; }
 
-    public double getComSale() { return comSale; }
-    public void setComSale(double comSale) { this.comSale = comSale; }
+    public int getComSale() { return comSale; }
+    public void setComSale(int comSale) { this.comSale = comSale; }
+
+    public String print() { return this.getFirstName()+", "+this.getLastName()+", "+this.getSocialNum()+", %"+comRate+", $"+comSale; }
 }

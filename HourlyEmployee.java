@@ -1,16 +1,18 @@
 public class HourlyEmployee extends Employee {
-    private double wage;
-    private double hrWork;
+    private int wage;
+    private int hrWork;
 
-    public HourlyEmployee(String firstName, String lastName, int socialNum, double wage, double hrWork) {
+    public HourlyEmployee(String firstName, String lastName, int socialNum, int wage, int hrWork) {
         super(firstName, lastName, socialNum);
         this.wage = wage;
         this.hrWork = hrWork;
     }
 
-    public double getWage() { return wage; }
-    public void setWage(double wage) { this.wage = wage; }
+    public int getWage() { return wage; }
+    public void setWage(int wage) { this.wage = wage; }
 
-    public double getHrWork() { return hrWork; }
-    public void setHrWork(double hrWork) { this.hrWork = hrWork; }
+    public int getHrWork() { return hrWork; }
+    public void setHrWork(int hrWork) { this.hrWork = hrWork; }
+
+    public String print() { return this.getFirstName()+", "+this.getLastName()+", "+this.getSocialNum()+", $"+wage+", "+hrWork; }
 }
