@@ -8,12 +8,12 @@ class P3Driver {
         Ship ship2 = new CruiseShip("Symphony of the Seas", 2018, 3000);
         Ship ship3 = new CargoShip("USS Everest", 2020, 12940);
 
-        shipList.add(ship1);
-        shipList.add(ship2);
-        shipList.add(ship3);
+        shipList.set(0, ship1);
+        shipList.set(1, ship2);
+        shipList.set(2, ship3);
         
         for (Ship s : shipList) {
             s.print();
-        }
+        }    
     }
 }
